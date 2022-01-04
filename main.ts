@@ -56,8 +56,8 @@ Explanation:
 * All other words are shorter than 'hello'
 
 Bonus:
-1. What's the Time complexity?
-2. What's the Space complexity?
+1. What's the Time complexity? -----> O(n)
+2. What's the Space complexity? ----> O(n)
 
 */
 
@@ -87,11 +87,11 @@ function theLongestWord(){
        
        for(let j = 0; j < lettersOfWord.length; j++){                      
             if(ob2.hasOwnProperty(lettersOfWord[j])    &&  ob2[lettersOfWord[j]] > 0){
-                   ob2[lettersOfWord[j]] = ob2[lettersOfWord[j]] - 1 //usa la letra y quita el uso del value
+                   ob2[lettersOfWord[j]] = ob2[lettersOfWord[j]] - 1 //usa la letra y resta el uso del value
                   
            }else{
                console.log("break..")
-               break;//interrumpe el recorrido de la palabrra por nno enccontrar la propiedad o el valor mayor a 0
+               break;//interrumpe el recorrido de la palabrra por no encontrar la propiedad o el valor mayor a 0
            } 
              if( j == lettersOfWord.length - 1){                         
                    if(lettersOfWord.length > wordLongest.length) {wordLongest= bagWords[i]}
